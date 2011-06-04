@@ -1,0 +1,288 @@
+/*
+ *	Site Name:		TextU.org
+ *	Author: 		Cesar Gonzalez
+ *	Author URI:		http://www.fleethecube.com
+ *  Description:	Simple text messaging app site that I've been running (more like neglecting) since 2006.  How the years fly by.
+ */
+
+* { margin: 0; padding: 0; }
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 1.5;
+	color:#333;
+	background-color: #EFEFDF;
+}
+
+a, a:link, a:visited {
+	color: #D76E08;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: #D04040;
+	text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	line-height: 1.1;
+	color: #222; 
+	padding: 0 0 0.5em 0; 
+}
+
+h1 { font-size: 30px; }
+h2 { font-size: 26px; }
+h3 { font-size: 16px; padding-top: 0.5em; }
+
+p { margin-bottom: 1em; }
+
+ul {
+	list-style-type: circle;
+	margin: 0.5em 0;
+}
+	
+ol { margin-left: 1.5em; }
+li { margin-left: 1.5em; }
+
+/* Layout Elements */
+
+#wrapper {
+	width: 920px;
+	margin: 10px auto 30px auto;
+	background-color: #FFF;
+	border: 1px solid #999;
+	box-shadow: 0px 0px 7px #999;
+}
+
+#header {
+	position: relative;
+	margin: 4px 4px 0 4px;
+	height: 60px;
+	border: 1px solid #15566A;
+	border-bottom: 1px solid #FFF;
+	background: #177CCA url(../images/blue-bg.png) repeat-x top left;
+}
+
+#content {
+	clear: both;
+	padding: 15px 25px 30px 25px;
+}
+
+#sidebar {
+	width: 340px;
+	float: left;
+}
+
+#main {
+	width: 510px;
+	float: right;
+}
+
+#footer {
+	padding: 25px;
+	text-align: center;
+	font-size: 12px;
+}
+
+#post_footer {
+	color: #777;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+
+/* Header */
+
+#header #logo {
+	display: block;
+	margin: 5px 0 0 10px;
+}
+
+#header h1 {
+	width: 500px;
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	color: #FFF;
+	font-size: 21px;
+	text-align: right;
+}
+
+
+/* Menu Layout */
+
+ul#menu {
+	float: left;
+	background: #222 url(../images/nav-bg.png) repeat-x top left;
+	margin: 0 4px 0 4px;
+	width: 912px;
+}
+
+ul#menu li {
+	float: left;
+	margin: 0;
+	text-align: center;
+	font-size: 0.9em;
+	list-style-type: none;
+	border-right: 1px solid #DDD;
+}
+
+
+ul#menu li a {
+	display: block;
+	color: #FFF;
+	text-decoration: none;
+	line-height: 1em;
+	height: 22px;
+	padding: 8px 12px 2px 12px;
+}
+
+ul#menu li a:hover {
+	color: #DDD;
+	text-decoration: underline;
+}
+
+ul#menu li#current a {
+	font-weight: bold;
+	background-color:#49A4C2;
+}
+
+/* Body Styles */
+
+.logotext {
+	font-weight: bold;
+	color: #87C900;
+}
+
+.alignright {
+	float: right;
+	padding: 3px;
+	border: 1px solid #999;
+	margin: 0 0 10px 10px;
+}
+
+.alignleft {
+	float: left;
+	padding: 3px;
+	border: 1px solid #999;
+	margin: 0 10px 10px 0;
+}
+
+th {
+	text-align: left;
+	font-weight: bold;
+	border-bottom: 1px solid #999; 
+	
+}
+
+td { padding: 0 15px 0 0; }
+
+
+/* Form Styles */
+
+input, textarea {
+	border: 1px solid #999;
+	background: #FFF url(../images/form-gradient.png) repeat-x;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color: #444;
+	padding: 4px;
+	margin-bottom: 5px;
+}
+
+label {
+	color: #777;
+	font-size: 14px;
+	display: block;
+}
+
+input:hover, textarea:hover, select:hover {
+	border: 1px solid #111;
+	color: #222;
+}
+
+span.note { color: red; font-size: 12px; }
+#char_limit { float: right; margin-right: 10px; color: #888; }
+#sms_send textarea { height: 100px; }
+
+
+/* Sidebar Styles */
+
+#sidebar h3 {
+	clear: both;
+	padding-top: 20px;
+}
+
+/* Other */
+
+.download-link {
+	width: 300px;
+	height: 46px;
+	padding:18px 0 0 85px;
+	font: bold 14px Tahoma, sans-serif;
+	background: #CCFFCC url(../images/download.gif) top left no-repeat;
+	border: 1px solid #199F17;
+
+}
+
+.message, #mce-success-response, .error {
+	background-color: #FFF0F4;
+	border: 1px solid #FF0000;
+	color: #FF0000;
+	padding: 7px;
+	margin-bottom: 10px;
+	font-size: 13px;
+}
+
+.message, #mce-success-response {
+	background-color: #CCFFCC;
+	border: 1px solid #199F17;
+	color: #199F17;
+}
+
+.message div, .error div { padding: 70px 10px; font-size: 17px; font-weight: bold; }
+
+a img { border: 0; }
+
+img.inline {
+  float: right;
+  margin: 0px 5px 5px 20px;
+  border: 1px solid #888;
+}
+
+/* Email Signup Form */
+#mc_embed_signup fieldset { 
+	padding: 15px; 
+	background-color: #DCEAF3; 
+	border: 1px solid #555;
+}
+
+#mc_embed_signup legend { 
+	font-size: 17px; 
+	font-weight: bold; 
+	color: #49A4C2; 
+	background-color: #FEFEFE; 
+	border: 1px solid #555; 
+	padding: 5px 10px; 
+}
+
+#mc_embed_signup { margin-bottom: 15px; }
+#mc_embed_signup label { color: #333; }
+#mc_embed_signup input.email { width: 450px; }
+#mc_embed_signup .info { font-size: 12px; color: green; }
+#mc_embed_signup .btn {}
+.mce_inline_error { color: red !important }
+
+
+/* The Alsett Clearing Method */
+/*   Allows footer to clear all columns.  Via Stylin' with CSS */
+
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+/* End Alsett Clearing Method */
